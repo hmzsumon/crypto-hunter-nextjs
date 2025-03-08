@@ -8,7 +8,7 @@ import { Button } from '../ui/button';
 
 const NavBar = () => {
 	const router = useRouter();
-	const { userId } = useAuth();
+	const userId = 0;
 	return (
 		<div className='sticky top-0 border border-b-primary/10'>
 			<Container>
@@ -21,7 +21,6 @@ const NavBar = () => {
 						<div className='font-bold text-xl'>WebRTC Chart</div>
 					</div>
 					<div className=' flex items-center gap-3'>
-						<UserButton />
 						{!userId && (
 							<>
 								<Button
